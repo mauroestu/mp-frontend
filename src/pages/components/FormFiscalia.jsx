@@ -59,6 +59,9 @@ const FormFiscalia = ({
       setTown(data);
       setFiscalia(selectedFiscalia);
     }
+    else {
+      setUpdate(false);
+    }
   }, [selectedFiscalia, towns]);
 
   const handleChange = (event) => {
